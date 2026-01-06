@@ -1,0 +1,11 @@
+{
+  "name": "auto-clicker",
+  "version": "0.1.0",
+  "description": "自动点击器",
+  "scripts": {
+    "build": "cargo build --release && cmd /c copy target\\\\release\\\\auto_clicker.exe .\\\\"
+  },
+  "devDependencies": {},
+  "dependencies": {},
+  "private": true
+}
