@@ -86,6 +86,20 @@ auto-click/
 - Windows 10/11
 - Visual Studio Build Tools (用于Windows API)
 
+### 快捷命令
+
+项目提供了几个npm脚本命令来简化开发和分发流程：
+
+- **`npm run build`**: 编译release版本并将可执行文件复制到项目根目录
+- **`npm run dist`**: 执行完整的分发流程，包括构建和打包
+
+分发命令会自动：
+1. 构建最新的release程序
+2. 将exe文件复制到根目录
+3. 创建`dist`目录（如果不存在）
+4. 将`auto_clicker.exe`、`config.json`和`使用说明.txt`压缩成zip包
+5. 输出到`dist/auto-clicker-v{版本号}.zip`
+
 ### 编译运行
 
 1. 克隆项目
