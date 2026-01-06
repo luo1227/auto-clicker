@@ -4,7 +4,7 @@
   "description": "自动点击器",
   "scripts": {
     "build": "cargo build --release && cmd /c copy target\\\\release\\\\auto_clicker.exe .\\\\",
-    "dist": "npm run build && powershell \"Compress-Archive -Path auto_clicker.exe,config.json,'使用说明.txt' -DestinationPath auto-clicker-v%npm_package_version%.zip -Force\""
+    "dist": "npm run build && powershell \"New-Item -ItemType Directory -Force -Path dist | Out-Null; Compress-Archive -Path auto_clicker.exe,config.json,'使用说明.txt' -DestinationPath dist/auto-clicker-v%npm_package_version%.zip -Force\""
   },
   "devDependencies": {},
   "dependencies": {},
